@@ -10,6 +10,7 @@
     "new:component": "node tools/new-component"
   },
   "dependencies": {
+    "framer-motion": "^6.3.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "sass": "^1.52.1"
