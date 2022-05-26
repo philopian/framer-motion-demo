@@ -1,16 +1,20 @@
 import Button from '@/components/Button'
 import Modal from '@/components/Modal'
+import { useState } from 'react'
 
 import './App.css'
 
 function App() {
-  return (
-    <div>
-      <h3>Framer Motion</h3>
+  const [modalOpen, setModalOpen] = useState(false)
 
-      <Button>Show Modal</Button>
-      <Modal>Modal</Modal>
-    </div>
+  const close = () => setModalOpen(false)
+  const open = () => setModalOpen(true)
+  return (
+    <main>
+      <h3>Framer Motion</h3>
+      <Button onClick={() => (modalOpen ? close() : open())}>Show Modal</Button>
+      {modalOpen && <Modal handleClose={close}>Modal</Modal>}
+    </main>
   )
 }
 

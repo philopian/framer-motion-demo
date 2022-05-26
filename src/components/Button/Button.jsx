@@ -1,12 +1,16 @@
+import { motion } from 'framer-motion'
+
 import styles from './Button.module.scss'
 
-export default function Button({ children, className, ...rest }) {
-  let cx = styles.wrapper
-  if (className) cx = `${cx} ${className}`
-
+export default function Button({ children, ...rest }) {
   return (
-    <button className={cx} {...rest}>
+    <motion.button
+      className={styles.Button}
+      {...rest}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.9 }}
+    >
       {children}
-    </button>
+    </motion.button>
   )
 }

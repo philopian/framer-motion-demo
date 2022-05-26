@@ -1,0 +1,16 @@
+html, body{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+main{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center;
+  overflow-y: hidden;
+  height: 100vh;
+  background: green;
+}

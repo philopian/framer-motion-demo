@@ -1,6 +1,14 @@
 @import "@/styles/_vars";
 
 .Button {
-  color: blue;
-  &:hover {}
+  font-size: 1em;
+  background: #3498db;
+  color: #fff;
+  border: 0.25rem solid #3498db;
+  padding: 0.5em 0.35em;
+  margin: 0.5rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  cursor: pointer;
 }
